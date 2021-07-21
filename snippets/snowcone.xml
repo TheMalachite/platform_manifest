@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="snowcone"
+          fetch="https://github.com/TheMalachite/"
+          revision="snowcone-beta-3" />
+
+  <!-- Remove some repos -->
+  <remove-project name="platform/art"/>
+  <remove-project name="platform/libcore"/>
+  <remove-project name="platform/packages/modules/NeuralNetworks"/>
+
+  <!-- Track some repos -->
+  <project path="art" name="platform/art" remote="aosp" revision="master" groups="pdk" />
+  <project path="libcore" name="platform/libcore" remote="aosp" revision="master" groups="pdk" />
+  <project path="packages/modules/NeuralNetworks" name="platform/packages/modules/NeuralNetworks" remote="aosp" revision="master" groups="pdk-cw-fs,pdk-fs" />
+  <project path="external/exfatprogs" name="platform/external/exfatprogs" remote="aosp" revision="master" groups="pdk" />
+  <project path="external/rust/crates/base64" name="platform/external/rust/crates/base64" remote="aosp" revision="master" groups="pdk"/>
+  <project path="external/rust/crates/command-fds" name="platform/external/rust/crates/command-fds" remote="aosp" revision="master" groups="pdk" />
+  <project path="external/rust/crates/flate2" name="platform/external/rust/crates/flate2" remote="aosp" revision="master" groups="pdk" />
+  <project path="external/rust/crates/kernlog" name="platform/external/rust/crates/kernlog" remote="aosp" revision="master" groups="pdk" />
+
+</manifest>
