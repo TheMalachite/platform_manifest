@@ -9,7 +9,9 @@
   <remove-project name="platform/art"/>
   <remove-project name="platform/build"/>
   <remove-project name="platform/libcore"/>
+  <remove-project name="platform/external/selinux"/>
   <remove-project name="platform/packages/modules/NeuralNetworks"/>
+  <remove-project name="platform/system/core"/>
 
   <!-- Track some repos -->
   <project path="art" name="platform/art" remote="aosp" revision="master" groups="pdk" />
@@ -23,11 +25,13 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
   <project path="libcore" name="platform/libcore" remote="aosp" revision="master" groups="pdk" />
-  <project path="packages/modules/NeuralNetworks" name="platform/packages/modules/NeuralNetworks" remote="aosp" revision="master" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/exfatprogs" name="platform/external/exfatprogs" remote="aosp" revision="master" groups="pdk" />
+  <project path="external/selinux" name="platform_external_selinux" remote="snowcone" groups="pdk" />
   <project path="external/rust/crates/base64" name="platform/external/rust/crates/base64" remote="aosp" revision="master" groups="pdk"/>
   <project path="external/rust/crates/command-fds" name="platform/external/rust/crates/command-fds" remote="aosp" revision="master" groups="pdk" />
   <project path="external/rust/crates/flate2" name="platform/external/rust/crates/flate2" remote="aosp" revision="master" groups="pdk" />
   <project path="external/rust/crates/kernlog" name="platform/external/rust/crates/kernlog" remote="aosp" revision="master" groups="pdk" />
+  <project path="packages/modules/NeuralNetworks" name="platform/packages/modules/NeuralNetworks" remote="aosp" revision="master" groups="pdk-cw-fs,pdk-fs" />
+  <project path="system/core" name="platform_system_core" remote="snowcone" groups="pdk" />
 
 </manifest>
