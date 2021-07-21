@@ -10,6 +10,7 @@
   <remove-project name="platform/build"/>
   <remove-project name="platform/libcore"/>
   <remove-project name="platform/external/selinux"/>
+  <remove-project name="platform/packages/apps/ThemePicker"/>
   <remove-project name="platform/packages/modules/NeuralNetworks"/>
   <remove-project name="platform/system/core"/>
 
@@ -31,6 +32,7 @@
   <project path="external/rust/crates/command-fds" name="platform/external/rust/crates/command-fds" remote="aosp" revision="master" groups="pdk" />
   <project path="external/rust/crates/flate2" name="platform/external/rust/crates/flate2" remote="aosp" revision="master" groups="pdk" />
   <project path="external/rust/crates/kernlog" name="platform/external/rust/crates/kernlog" remote="aosp" revision="master" groups="pdk" />
+  <project path="packages/apps/ThemePicker" name="platform_packages_apps_ThemePicker" remote="snowcone" groups="pdk-fs" />
   <project path="packages/modules/NeuralNetworks" name="platform/packages/modules/NeuralNetworks" remote="aosp" revision="master" groups="pdk-cw-fs,pdk-fs" />
   <project path="system/core" name="platform_system_core" remote="snowcone" groups="pdk" />
 
